@@ -1,0 +1,245 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>My portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".hamburger .fa").click(function() {
+                document.querySelector(".topbar").classList.toggle("show");
+            })
+
+            $("a").click(function() {
+                $("a").removeClass("active");
+                $(this).addClass("active");
+                if ($(window).width() <= 964) {
+                    document.querySelector(".topbar").classList.toggle("show");
+                }
+
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    
+<!--                                                        HEADER-SECTION                                   -->
+    <header id="myHeader" class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="brand-name">
+                    Sanjay Saravanan
+                </div>
+                <div class="hamburger">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="topbar">
+                    <ul>
+                        <li><a href="#home12" class="active" id="home">Home</a></li>
+                        <li><a href="#aboutme">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#achievement">Achievements</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+ <!--                                                  HOME-SECTION                                      -->   
+    <section class="home" id="home12">
+        <div class="row1">
+            <img class="img-fluid" src="images/programmer.png">
+            <div class="home-content">
+                <div class="block">
+                    <h6>Hello, I am</h6>
+                    <h1>S Sanjay</h1>
+                    <h3>Welcome to my Site</h3>
+                </div>
+            </div>
+            <div class="horizontal">
+                <h5>Hi, I am Sanjay</h5>
+                <h5>Welcome to my site.</h5>
+            </div>
+        </div>
+    </section>
+<!--                                                        ABOUT_ME-SECTION                                   -->
+    <section class="about-me" id="aboutme">
+        <div class="about-header">
+            <h3>About me</h3>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <img src="images/aboutme.svg">
+                <div class="col-sm-6 text-left">
+                    <div class="col-content">
+                        <strong>First Name:</strong>&nbsp; Sanjay
+                    </div>
+                    <div class="col-content">
+                        <strong>Last Name:</strong>&nbsp; Saravanan
+                    </div>
+                    <div class="col-content">
+                        <strong>Birthday:</strong>&nbsp; 30-08-1999
+                    </div>
+                    <div class="col-content">
+                        <strong>Age:</strong>&nbsp; 21
+                    </div>
+                    <div class="col-content">
+                        <strong>Phone No :</strong>&nbsp; 7598829114
+                    </div>
+                    <div class="col-content">
+                        <strong>Email:</strong>&nbsp;ssanjaynkl1999@gmail.com
+                    </div>
+                    <div class="col-content">
+                        <strong>Residence:</strong>&nbsp;Namakkal,Tamil Nadu
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="about-me-content">
+            <p>I am currently doing my B.E in Electronics and Communication Engineering.</p>
+            <p>I had a lot of interest in App and Web Developemnt.I am an Enthusiatic engineer with optimistic mind.</p>
+            <p>I had also got Merit Scholarahips in my Department. </p>
+            <p>I like to be in groups and I had a lot of friends</p>
+            <p>I participated in several hackathons</p>
+        </div>
+
+    </section>
+
+<!--                                                        SKILL-SECTION                                   -->
+    <section class="skill" id="skills">
+        <div class="skill-header">
+            <h2><strong>My Skills</strong></h2>
+        </div>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 skill-content-java">
+                        <img class="SKILL" src="images/java.png">
+                        <h3>Java</h3>
+                    </div>
+                    <div class="col-md-4 skill-content">
+                        <img class="SKILL" src="images/android.png">
+                        <h3>App Developement</h3>
+                    </div>
+                    <div class="col-md-4 skill-content">
+                        <img class="SKILL" src="images/webdevelopement.png">
+                        <h3>Web Developement</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+<!--                                                      PROJECT-SECTION                                   -->
+    <section class="project" id="projects">
+        <div class="project-header">
+            <h2><strong>My Projects</strong></h2>
+        </div>
+        <div class="container project_section">
+            <div class="row">
+                <div class="col-sm-5 align">
+                    <img class="project-content" src="images/sewagegas.png">
+                </div>
+                <div class="col-sm-7">
+                    <h2><strong>Sewage Gas Monitoring</strong></h2>
+                    <p>This project aims at providing smart solutions to monitor poisonous sewage gases and works on a system of live sewage level detection and monitoring. Whenever, a certain threshold is crossed, an alert is sent to the observer who is examining the conditions from a remote location. The information is then forwarded along with different gas ppm values. indicating whether it is safe for the worker to clean or work in that environment or not.
+                        An app was developed which indiactes the gas values and safer limit.The remotely placed IoT monitoring equipment and IoT platform are integrated to create proposed system. This requires calibration of gas sensors for industrial purposes and determining the correct threshold levels for septic plants and facilities.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <img class="project-content" src="images/coronavirus.png">
+                </div>
+                <div class="col-sm-7">
+                    <h2><strong>Covid-19 Tracker App</strong></h2>
+                    <p>This project aims at providing COVID-19 status all over India.An app was developed using java nad android studio.This app clearly describes the Covid statistics.State wise statistics is also available along with graphical view of confirmed,recovered and diseased counts which gets updated on a daily basis.The data gets updated daily.In addition nearby hospitals feature is added to help the people to locate the hospitals.Helpline Numbers are also available for each state.This app clearly defines and provides the required covid information to the people in detailed manner.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <img class="project-content-pushcart" src="images/smarttrash.png">
+                </div>
+                <div class="col-sm-7">
+                    <h2><strong>Smart Garbage Vehicle and Pushcarts</strong></h2>
+                    <p>This project aims at providing smart solutions to current garbage problems.Everyday tons of waste is disposed into open sites. Improper waste management and transports leads to environmental pollution and diseases. The conventional methods are very tedious and unhygienic. The process involves manual monitoring and there is no tracking mechanism for the garbage carrying vehicles and garbage load. A new system can be developed to monitor the garbage vehicles in a particular ward of a corporation to obtain optimization in terms of route and garbage collection. The garbage vehicles and push carts can be fitted with sensors and based on the GPS location the vehicles can be monitored to cover all areas of the ward. The vehicles should be compartmentalized for dry and wet waste to avoid the mixing of garbage.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--                                                        ACHIEVEMENTS-SECTION                               -->
+    <section class="achievements" id="achievement">
+        <div class="achievements-header">
+            <h2><strong>My Achievements</strong></h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="images/awards.png">
+                </div>
+                <div class="col-md-7">
+                    <h3>Merit Scholarship in 1st and 2nd year for securing 2nd rank in ECE Department.</h3>
+                </div>
+            </div>
+            <div class="row sih">
+                <div class="col-md-2">
+                    <img src="images/sihlogo.png">
+                </div>
+                <div class="col-md-7">
+                    <h3>Runner Up in SIH Hardware Edition 2019</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--                                                        CONTACT-SECTION                                   -->
+    <section class="contact-me" id="contact">
+        <h2><strong>Contact me</strong></h2>
+        <div class="col-xl-5 mx-auto form-content">
+            <form>
+                <div class="row">
+                    <div class="form-group col-lg-12">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-12">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-lg-12">
+                        <label>Content:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-secondary">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+<!--                                                        FOOTER-SECTION                                   -->
+    <footer>
+        © Copyright 2020, All Rights Reserved
+        <div>
+            <img src="images/facebook.png">
+            <img src="images/instagram.png">
+        </div>
+    </footer>
+</html>
